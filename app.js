@@ -112,11 +112,7 @@ const App = props => {
     {/*planet list */}
     {props.initialPlanets.map( planet =>
     <Planet 
-      name={planet.name}
-      desc={planet.desc}
-      diameter={planet.diameter}
-      moons={planet.moons}
-      url={planet.url}
+      {...planet}
       key={planet.id}
     />
     )}
